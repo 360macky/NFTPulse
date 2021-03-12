@@ -25,7 +25,7 @@
       fetch('https://api.coingecko.com/api/v3/coins/list')
 	.then(response => response.json())
 	.then(listCoins => {
-      for (let listCoinsIndex in listCoins.slice(0, 18)) {
+      for (let listCoinsIndex in listCoins.slice(0, 180)) {
         let symbolList = listCoins[listCoinsIndex].symbol;
 	console.log(symbolList);
 	document.getElementById('coins-list').innerHTML += `<li>${symbolList}</li>`;
