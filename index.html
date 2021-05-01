@@ -1,44 +1,207 @@
 <!DOCTYPE html>
-<head>
-  <title>NFTPulse.org - NFT Data Tool</title>
-  <!--Just do it-->
-  <!-- Primary Meta Tags of NFTPulse -->
-  <meta name="title" content="NFTPulse.org Project">
-  <meta name="description" content="NFT is the 2021 revolution. On the shoulders of giants. Choose NFTPulse.org">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- styles -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/s454dced4e2f44b5d9e92a319553f202a5d09de5a_CSS.fab15c62.chunk.css">
 
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://nftpulse.org/">
-  <meta property="og:title" content="NFTPulse.org Project">
-  <meta property="og:description" content="🚀 NFT is the 2021 revolution. On the shoulders of giants. Choose NFTPulse.org">
-  <meta property="og:image" content="https://i.imgur.com/Z3H7MUB.jpg">
+  </head>
+  <body>
+    <div>
+      
+      <img src="logo.png" alt="logo" style="width:240px" class="center">
 
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://nftpulse.org/">
-  <meta property="twitter:title" content="NFTPulse.org Project">
-  <meta property="twitter:description" content="🚀 NFT is the 2021 revolution. On the shoulders of giants. Choose NFTPulse.org">
-  <meta property="twitter:image" content="https://i.imgur.com/Z3H7MUB.jpg">
-  <script>
-    function getCoins() {
-      document.getElementById('show-coins-button').innerText = "Wait a few seconds, coins are loading..."
-      fetch('https://api.coingecko.com/api/v3/coins/list')
-	.then(response => response.json())
-	.then(listCoins => {
-      for (let listCoinsIndex in listCoins.slice(0, 180)) {
-        let symbolList = listCoins[listCoinsIndex].symbol;
-	console.log(symbolList);
-	document.getElementById('coins-list').innerHTML += `<li>${symbolList}</li>`;
-        document.getElementById('show-coins-button').innerText = "Click to show coins"
-      }
-      });
-    }
-  </script>
-</head>
-<body>
-  <h1>NFTPulse.org</h1>
-  <img width="200" src="https://raw.githubusercontent.com/360macky/NFTPulse/main/nftpulse%20logo.png" alt="">
-  <p>We only have one future, let's move towards it. On the shoulders of giants. Choose NFTPulse.org</p>
-  <button id="show-coins-button" onClick="getCoins()">Click to show coins</button>
-  <ul id="coins-list"></ul>
-</body>
+    </div>
+
+
+    <section class="menu">
+      <!-- title -->
+      <div class="title">
+        <h2> NFT data</h2>
+        <p>NFT (Non-fungible Token) refers to digital assets with unique characteristics. Examples of NFT include crypto artwork, collectibles, game items, financial products, and more.
+        </p>
+        <div class="underline"></div>
+        <!-- Se agrega los graficos-->
+<div class="defi-market-data">
+
+
+  <!-- Inicia la parte izquierda, la columna-->
+	<div class="defi-market-column">
+		<div class="defi-market-box defi-market-total">
+			<h2>Total Value Locked (USD)</h2>
+			<span>$38.4B</span>
+		</div>
+		<div class="defi-market-box defi-market-dominance">
+			<h2>Maker
+				<!-- --> Dominance
+			</h2>
+			<span>15.74%</span>
+		</div>
+		<div class="defi-market-box defi-market-index">
+			<h2>DeFi Pulse Index</h2>
+			<span>406.62
+				<div class="defi-market-index-sub defi-market-index-green">+
+					<!-- -->27.16
+					<br>(
+						<!-- -->+
+						<!-- -->7.16%
+						<!-- -->)
+					</div>
+				</span>
+			</div>
+		</div>
+    <!-- Termina la parte izquierda -->
+
+
+    <!-- Empieza la parte derecha-->
+
+		<div class="defi-market-right">
+			<div class="defi-chart">
+				<div class="chart-header">
+					<h1 class="title">Total Value Locked (USD)
+						<!-- -->
+						<!-- --> in 
+						<!-- -->DeFi
+					</h1>
+					<div class="controls">
+						<ul class="metrics">
+							<li>
+								<span class="option active">
+									<span class="tooltip">
+										<span class="tooltip-trigger">TVL (USD)</span>
+									</span>
+								</span>
+							</li>
+							<li>
+								<span class="option ">ETH</span>
+							</li>
+							<li>
+								<span class="option ">
+									<span class="tooltip">
+										<span class="tooltip-trigger">BTC</span>
+									</span>
+								</span>
+							</li>
+						</ul>
+						<ul class="timescales">
+							<li>
+								<span class="option ">All</span>
+							</li>
+							<li>
+								<span class="option ">1 Year</span>
+							</li>
+							<li>
+								<span class="option active">90 Day</span>
+							</li>
+							<li>
+								<span class="option ">30 Day</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="chart-body">
+					<div class="chartjs-size-monitor">
+						<div class="chartjs-size-monitor-expand">
+							<div class=""></div>
+						</div>
+						<div class="chartjs-size-monitor-shrink">
+							<div class=""></div>
+						</div>
+					</div>
+					<canvas height="220" width="737" style="display: block; width: 737px; height: 220px;" class="chartjs-render-monitor"></canvas>
+					<img src="./nftpulselogo.svg" class="defi-chart-watermark" alt="nft chart">
+					</div>
+				</div>
+			</div>
+		</div>
+      </div>
+
+      <!-- termina la parte derecha-->
+
+      <!-- termina los graficos-->
+
+      <!-- filter buttons -->
+
+      <!-- los filtros all projects, art.-->
+      
+      <div class="btn-container">
+        <!-- <button type="button" class="filter-btn" data-id="all">all</button>
+        <button type="button" class="filter-btn" data-id="breakfast">
+          breakfast
+        </button>
+        <button type="button" class="filter-btn" data-id="lunch">lunch</button>
+        <button type="button" class="filter-btn" data-id="shakes">
+          shakes
+        </button> -->
+
+      <!-- Termina los filtros all projects, art.-->
+
+      </div>
+      <!-- menu items -->
+      <div class="section-center">
+        <!-- single item -->
+        <!-- cuando no carga el javascript va esto-->
+        <article class="menu-item">
+          <img src="./menu-item.jpeg" alt="menu item" class="photo" />
+          <div class="item-info">
+            <header>
+              <h4>buttermilk pancakes</h4>
+              <h4 class="price">$15</h4>
+            </header> 
+            <p class="item-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repudiandae, sint quam. Et reprehenderit fugiat nesciunt inventore
+              laboriosam excepturi! Quo, officia.
+            </p>
+          </div>
+        </article>
+        <!-- end of single item -->
+        <!-- single item -->
+        <article class="menu-item">
+          <img src="./menu-item.jpeg" alt="menu item" class="photo" />
+          <div class="item-info">
+            <header>
+              <h4>buttermilk pancakes</h4>
+              <h4 class="price">$15</h4>
+            </header>
+            <p class="item-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repudiandae, sint quam. Et reprehenderit fugiat nesciunt inventore
+              laboriosam excepturi! Quo, officia.
+            </p>
+          </div>
+        </article>
+        <!-- end of single item -->
+        <!-- single item -->
+        <article class="menu-item">
+          <img src="./menu-item.jpeg" alt="menu item" class="photo" />
+          <div class="item-info">
+            <header>
+              <h4>buttermilk pancakes</h4>
+              <h4 class="price">$15</h4>
+            </header>
+            <p class="item-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repudiandae, sint quam. Et reprehenderit fugiat nesciunt inventore
+              laboriosam excepturi! Quo, officia.
+            </p>
+          </div>
+        </article>
+        <!-- end of single item -->
+      </div>
+    </section>
+    <!-- javascript -->
+    <script src="app.js"></script>
+  </body>
+</html>
+<!-- esta progr. para que cargue todos los elementos antes que los filtros-->
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eum consequuntur laudantium corrupti in numquam magnam commodi, aspernatur, tenetur iusto, temporibus harum ad nemo debitis odit quos consequatur tempore!</p>
