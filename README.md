@@ -25,7 +25,7 @@ Do you would like to contribute? Do you want to be the author of a new feature? 
 
 ## ✒️ Authors/Developers
 * **[Marcelo Arias](https://github.com/360macky)**, in charge of linking to GitHub, site deployment, and the very simple first page of NFTpulse.
-* **[Elvis Nolasco](https://github.com/ensout)**, (yes, finally weee), uploaded the first NFTPulse logo and hooked it to the first page
+* **[Enso](https://github.com/ensout)**, (yes, finally weee), uploaded the first NFTPulse logo and hooked it to the first page
 
 > 💡 **Also:** The main idea for NFTPulse.org was conceptualized and is currently guided by Elvis Nolasco.
 
